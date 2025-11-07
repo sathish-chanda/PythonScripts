@@ -3,8 +3,9 @@ def readMaze(filename):
         with open(filename) as fh:
             maze = []
             for line in fh:
+                line = line.strip('\n')
                 characters = []
-                for ch in line.strip():
+                for ch in line:
                     characters.append(ch)
                 maze.append(characters)
         cols = len(maze[0])
@@ -13,12 +14,11 @@ def readMaze(filename):
                print("The maze is not rectangular. It is invalid.")
                raise SystemExit 
         return maze    
-
-    except OsError:
+    except OSError:
         print("There is a problem with the file you have selected")
         raise SystemExit
 
 if __name__ == "__main__":
-    maze = readMaze('mazes/modest_maze.txt')
+    maze = readMaze('mazes/diagonal_23x23.txt')
     for row in maze:
         print(row)
