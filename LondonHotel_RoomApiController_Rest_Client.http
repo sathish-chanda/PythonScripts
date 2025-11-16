@@ -1,0 +1,50 @@
+# This files helps to test and get all the information related to the rest controllers. 
+# Run London-Hotels project. 
+# https://github.com/sathish-chanda/London-Hotel.git
+# The project will be running at http://localhost:8080/
+
+# This is sample testing of RoomApiController using the Rest Client extension of the VS Code. https://github.com/sathish-chanda/London-Hotel/blob/main/src/main/java/com/satish/lil/London_hotel/web/api/RoomApiController.java 
+
+# OPTIONS http://localhost:8080/rooms
+
+# HEAD http://localhost:8080/rooms
+
+# GET http://localhost:8080/rooms
+
+# OPTIONS http://localhost:8080/api/rooms
+
+# GET http://localhost:8080/api/rooms
+
+# GET http://localhost:8080/api/rooms/31
+
+# POST http://localhost:8080/api/rooms
+# Content-Type: application/json
+
+# {
+#   "name": "Old Port",
+#   "roomNumber": "RM",
+#   "bedInfo": "8K"
+# }
+
+# PUT http://localhost:8080/api/rooms/31
+# Content-Type: application/json
+
+# {
+#   "id": 31,
+#   "name": "New Port",
+#   "roomNumber": "RM",
+#   "bedInfo": "8K"
+# }
+
+# PATCH http://localhost:8080/api/rooms/31
+# Content-Type: application/json
+
+# {
+#   "name": "Red Port"
+# }
+
+# OPTIONS http://localhost:8080/api/rooms
+
+GET http://localhost:8080/api/rooms
+
+
