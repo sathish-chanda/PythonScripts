@@ -45,6 +45,13 @@
 
 # OPTIONS http://localhost:8080/api/rooms
 
+
+# DELETE http://localhost:8080/api/rooms/31
+# GET http://localhost:8080/api/rooms/31
+
 GET http://localhost:8080/api/rooms
+
+
+
 
 
