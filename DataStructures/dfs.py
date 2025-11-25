@@ -37,4 +37,6 @@ if __name__ == '__main__':
    print(result)
    assert result == [(0,0),(0,1),(1,1),(2,1),(2,2)]
    
-   print(dfs(readMaze('mazes/diagonal_23x23.txt'),(1,1),(9,14))) 
+   print(dfs(readMaze('mazes/diagonal_23x23.txt'),(1,1),(9,14)))
+   
+   print(dfs(readMaze('mazes/dfs_bfs_a_star_challenge.txt'),(0,0),(3,3)))
